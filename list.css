@@ -1,0 +1,119 @@
+/* 消除行内元素及行内块元素默认间距 */
+span,
+i,
+a,
+em,
+b,
+strong,
+input,
+img,
+button {
+  display: block;
+}
+
+/* 单位转换 */
+html {
+  font-size: -webkit-calc(100vw / 6.4);
+  font-size: -moz-calc(100vw / 6.4);
+  font-size: calc(100vw / 6.4);
+  height: 100%;
+}
+body {
+  background-color: #ffffff;
+  height: 100%;
+}
+
+header {
+  height: 0.74rem /* 74/100 */;
+  line-height: 0.74rem /* 74/100 */;
+  text-align: center;
+  border-bottom: 2px solid #e8e8e8;
+  font-size: 0.28rem /* 28/100 */;
+}
+nav {
+  flex: 1;
+  float: left;
+  /* height: 9.45rem ; */
+  height: calc(100% - 0.74rem - 0.98rem);
+  background-color: #efeff4;
+}
+nav a {
+  height: 1.03rem /* 103/100 */;
+  line-height: 1.03rem;
+  text-align: center;
+  font-size: 0.22rem /* 22/100 */;
+  color: #909090;
+  border-bottom: 2px solid #e8e8e8;
+  width: 1.53rem /* 153/100 */;
+}
+.selected {
+  background-color: #fff;
+}
+
+section {
+  float: right;
+  width: 4.87rem /* 487/100 */;
+  height: calc(100% - 0.74rem - 0.98rem);
+  overflow-y: scroll;
+  padding: 0.27rem /* 27/100 */;
+}
+section img {
+  width: 100%;
+}
+
+section div h4 {
+  height: 0.91rem /* 91/100 */;
+  line-height: 0.91rem /* 91/100 */;
+  font-size: 0.24rem /* 24/100 */;
+}
+section ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 0.14rem /* 14/100 */;
+  border-bottom: 1px solid #e7e7e9;
+}
+section div ul li {
+  width: 1.35rem /* 135/100 */;
+  height: 0.9rem /* 90/100 */;
+  font-size: 0.22rem /* 22/100 */;
+  line-height: 0.9rem;
+  text-align: center;
+  font-weight: 600;
+  background-color: #efeff4;
+  border-radius: 3px;
+  margin-bottom: 0.16rem /* 16/100 */;
+}
+
+footer {
+  position: fixed;
+  background-color: #fff;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 0.98rem /* 98/100 */;
+  width: 100%;
+  padding: 0 0.2rem /* 20/100 */;
+  overflow: hidden;
+}
+footer .iconfont {
+  margin-top: 0.1rem /* 10/100 */;
+  font-size: 0.5rem /* 50/100 */;
+}
+footer div {
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* width: 25%; */
+  height: 100%;
+  font-size: 0.18rem /* 18/100 */;
+  color: #777777;
+}
+.icon-dingdan {
+  color: #1dbbff;
+}
+
+footer div:nth-child(4) {
+  color: #24b8ff;
+}
